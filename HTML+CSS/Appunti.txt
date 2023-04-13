@@ -1,0 +1,103 @@
+Appunti HTML
+
+iniziare sempre con <!DOCTYPE html>
+meta non ha bisogno di chiudere <meta />
+<meta name="viewport"content="width=device-width, initial-scale=1" /> - migliora ceo e visualizzazione pagina
+<meta name="description" content="abc"/> descrizione del contenuto web
+link rel=css; href= nome - non vuole chiusura;
+href = link (sito web, #elemento id in pagina)
+img con src (sito fonte) + alt = descrizione
+<a> si innesta prima della parola da creare il link.
+for va con label; id con input/select/textarea per collegarli.
+tipi di input: text, email, password, date, radio, checkbox, file, number, submit.
+<input id, type, name, value, placeholder />
+perché radio elementi non siano tutti selezionabili, usare lo stesso valore name.
+select con option per tendina con opzioni
+textarea per riquadro
+
+x:last-of-type {} seleziona l'ultimo della lista, scorporandolo;
+<head> per le informazioni browser (carattere, css, lingua, seo...
+<body> è il corpo del testo che si vede. scorporarlo in parti come header (intro) e main.
+<i>corsivo</i>
+nav - creare altri link
+a - cliccabile (anchor)
+ul - unordered list (raggruppa la lista)
+li - ordered list  of points (i punti da scrivere)
+
+per form: indicare metodo: post (inviare) get(prendere dati) + azione.
+diverso da comando input submit!!
+<br /> testo a capo
+
+html-head-main(header/body)-footer/address
+
+in CSS
+.classe {}
+categoria {}
+#id
+*generale
+margin: su-giu-sx-dx; su/giu-sx/dx; tutto
+%, px, rem, em, auto, unset;
+width: 100%, max(), min(),
+display: Flex
+justify-content: space-evenly;
+border: dimensioni trasparenza colore;
+border-radius: topsx; topdx; botdx; botsx;
+transform: rotate(+/-xdeg) +orario; -antiorario;
+font-family: 'aaa bbb' abc-cba;
+font-weight: grassetto;
+padding, margini per dare ordine;
+x:not(abc) - esclude per la categoria abc;
+per taggare elementi dentro un contenitore con > el 
+
+rendere testo invisibile, ma rivelabile al passaggio del mouse: {position: absolute;
+width: 1px;
+height: 1px;
+padding: 0=
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
+}
+
+display: flex: creare flexbox
+
+tabella:
+table
+caption: iniziare tabella
+thead - titolo in th
+tbody
+tr - riga
+th - intestazione (elemento comune alle celle di riga e/o colonna)
+td - celletta;
+
+
+span[class~="sr-only"], seleziona i span che hanno classe sr-only;
+ per occultare elementi alla vista:
+   border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  margin: -1px;
+  !important: evita che si sovrascriva;
+  
+calc() : crea dimensioni da altri elementi, come %, rem...
+span:not(.sr-only)
+
+text-align,
+vertical-align
+font-size, color, style;
+* = tutto il testo in css
+
+@media query: se lunghezza min- max allora dammi queste impostazioni;
+@media (min-width: x) and (max-width: y){
+abc {def: ghi}
+lmn {opq: rst}
+}
+

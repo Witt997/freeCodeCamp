@@ -1,0 +1,24 @@
+RGB System - HEX
+rgb(r, g, b)
+HEX = #rrggbb
+hls(hue 0-240, saturation %, lightness %)
+
+Black (0, 0, 0) #000000
+White (255, 255, 255)
+
+Red (255, 0, 0) #FF0000
+Lime (0, 255, 0) #00FF00
+Blue (0, 0, 255) #0000FF
+
+Yellow (255, 255, 0) #FFFF00
+Cyan (0, 255, 255) #00FFFF
+Magenta (255, 0, 255) #FF00FF
+
+Orange (255, 127, 0) #FF7F00
+Spring Green (0, 255, 127) #00FF7F
+Violet (127, 0, 255) #7F00FF
+Chartreuse Green (127, 255, 0) #7FFF00
+Azure (0, 127, 255) #007FFF
+Rosa (255, 0, 127) #FF007F
+
+linear-gradient(deg direction, color1 stop, color2, ...)

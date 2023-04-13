@@ -1,0 +1,6 @@
+#navbar {position: relative;
+text-align: left;
+}
+
+@media (max-width: 500px) {width: 400px;
+}

@@ -1,0 +1,9 @@
+@media (max-width: 300px) {body {width 200px;}
+}
+
+#welcome-section {height: 100%;
+}
+
+#navbar {position: fixed;
+top: 0;
+}
