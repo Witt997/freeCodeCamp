@@ -1,0 +1,33 @@
+const addMessage = (message) => {
+  return {
+    type: 'ADD',
+    message: message
+  }
+};
+
+// Change code below this line
+function mapDispatchToProps(dispatch) {
+  return {
+    submitNewMessage: function(message) {
+      dispatch(addMessage(message)); //after creating the object, use a function for the argument you want to pass, and dispatch the action you want to pass
+    }
+    // dispatch = x; message = y; then mapDispatchToProps = x => ({ submitNewMessage: y => x(addMessage(y))});
+  }
+}
+
+
+Syntax:
+
+const mapDispatchToProps = dispatch => ({
+  myProp: someValue => dispatch(myAction(someValue))
+})
+
+// equivalent to
+function mapDispatchToProps(dispatch) {
+  return {
+    myProp: function(someValue) {
+      // call dispatch with an action creator
+      dispatch(myAction(someValue))
+    }, 
+  }
+}

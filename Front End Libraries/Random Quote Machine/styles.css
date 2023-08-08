@@ -1,0 +1,48 @@
+* {
+    font-family: lobster;
+  }
+body {
+    background-color:#FAFAD2;
+}
+#quote-box {
+  background-color: 	#FFDAB9;
+  text-align: center;
+  display: grid;
+  width: 80%;
+  height: auto;
+  grid-template-columns: 30px auto auto;
+  grid-template-rows: 80px auto auto auto;
+  grid-template-areas: "title title title"
+                       ". quote quote"
+                       "twit . author"
+                       ". . newq";
+  margin-top: 4vw;
+  margin-left: auto;
+  margin-right: auto;
+                    }
+  
+
+h1 {
+    grid-area: title;
+    /*grid-column: span 3; */
+}
+#text {
+    grid-area: quote;
+   /* grid-column: 2/4; */
+}
+#new-quote {
+background-color: #FFDAB9;
+float: right;
+grid-area: newq;
+
+}
+a {
+    grid-area: twit;
+    align-items: center;
+    justify-items: center;
+}
+#author {
+    grid-area: author;
+    text-align: right;
+    /*grid-column: 3; */
+}

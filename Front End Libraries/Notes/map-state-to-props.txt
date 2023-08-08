@@ -1,0 +1,8 @@
+const state = [];
+
+// Change code below this line
+function mapStateToProps(state) { //create function with state as argument;
+
+  return {messages: state}; //the function returns an object with property name of messages and argument of state;
+
+}
